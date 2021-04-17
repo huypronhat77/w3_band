@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="main">
+        <div id="cover">
+            <div class="modal">
+                <div class="modal-head">
+                    <h2><i class='bx bx-briefcase-alt'></i>Tickets</h2>
+                    <span class="close close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form action="">                       
+                            <div class="modal-form-info">
+                                <p class="modal-text"><i class='bx bxs-cart'></i>Tickets, $15 per person</p>
+                                <input type="text" class="form-control">
+                            </div>
+                            
+                            <div class="modal-form-info mt-16">                            
+                                <p class="modal-text"><i class='bx bxs-user' ></i>Send To</p>
+                                <input type="email" class="form-control">
+                            </div>
+                            <button type="submit" class="modal-pay-btn mt-16">
+                                PAY <i class='bx bx-check' ></i>
+                            </button>
+                    </form>
+
+                    <div class="modal-other mt-32">
+                        <button class="close-btn close-modal">
+                            Close 
+                        </button>
+                        <p class="pull-right help">
+                            Need <a href="">help?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <ul class="menu">
+                <li><a href="#slider">Home</a></li>
+                <li><a href="#about">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More <i class='bx bxs-down-arrow'></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Menu mobile button -->
+            <div class="menu-mobile-btn">
+                <i class='bx bx-menu menu-mobile-icon'></i>
+            </div>
+
+            <!-- Search button -->
+            <div class="search-btn">
+                <i class='bx bx-search-alt-2 search-icon'></i>
+            </div>
+        </div>
+
+
+        <div id="slider">
+            <div class="slider-container">
+                <img src="./assets/img/slider/chicago.jpg" alt="">          
+                <img src="./assets/img/slider/la.jpg" alt="">
+                <img src="./assets/img/slider/ny.jpg" alt="">               
+            </div>
+
+            <div class="slider-text">
+                <h2 class="slider-title"></h2>
+                <p class="slider-desc"></p>
+            </div>
+            
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+
+
+        </div>
+        <div id="content">
+            <!-- About -->
+            <div class="section-content" id="about">
+                <h2 class="section-heading">THE BAND</h2>
+                <p class="section-subheading">We love music</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum 
+                    dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea 
+                      commodo consequat. Duis aute irure dolor in 
+                      reprehenderit in voluptate velit esse cillum dolore 
+                      eu fugiat nulla pariatur. Excepteur sint occaecat
+                       cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt
+                         ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation ullamco laboris
+                           nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <!-- Member list -->
+                <div class="member-list row">
+                    <div class="col col-third s-col-full mt-32 text-center ">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/members/bandmember.jpg" alt="band member" class="member-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt-32 text-center ">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/members/bandmember.jpg" alt="band member" class="member-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt-32 text-center ">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/members/bandmember.jpg" alt="band member" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour -->
+            <div class="tour-section" id="tour">
+                <div class="section-content">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-subheading text-white">Remember to book your tickets!</p>
+
+                <!-- Ticket list -->
+                    <ul class="ticket-list">
+                        <li class="ticket-item">September <span class="sold-out">Sold out</span></li>
+                        <li class="ticket-item">October <span class="sold-out">Sold out</span></li>
+                        <li class="ticket-item">November <span class="quantity">3</span></li>
+                    </ul>
+                <!-- Ticket list -->
+                    <div class="place-list row">
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/place/place1.jpg" alt="" class="place-img">
+                            <div class="place-info">
+                                <h3 class="place-name">New York</h3>
+                                <div class="place-time">Fri 27 Nov 2016</div>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed 
+                                    vitae justo.</p>
+                                <a href="#" class="btn s-full-width buy-ticket-btn">Buy Tickets</a>
+                            </div>
+                        </div>
+
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/place/place1.jpg" alt="" class="place-img">
+                            <div class="place-info">
+                                <h3 class="place-name">New York</h3>
+                                <div class="place-time">Fri 27 Nov 2016</div>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed 
+                                    vitae justo.</p>
+                                <a href="#" class="btn s-full-width buy-ticket-btn">Buy Tickets</a>
+                            </div>
+                        </div>
+
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/place/place1.jpg" alt="" class="place-img">
+                            <div class="place-info">
+                                <h3 class="place-name">New York</h3>
+                                <div class="place-time">Fri 27 Nov 2016</div>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed 
+                                    vitae justo.</p>
+                                <a href="#" class="btn s-full-width buy-ticket-btn">Buy Tickets</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+             
+            <!-- Contact -->
+            <div class="section-content" id="contact">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-subheading">Fan? Drop a note!</p>
+
+                <div class="row contact-section">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class='bx bxs-map'></i>Chicago, US</p>
+                        <p><i class='bx bxs-phone' ></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class='bx bxs-envelope' ></i>Email:<a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="" class="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" class="form-control" required placeholder="Name">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" class="form-control" required placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" class="form-control" required placeholder="Message">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="btn pull-right s-full-width mt-16">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div id="map">
+            <img src="./assets/img/map/map.jpg" alt="">
+        </div>
+        <div id="footer">
+            <div class="social-list">
+                <a href="#">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-youtube' ></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-snapchat' ></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-pinterest' ></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var menuBtn = document.querySelector('.menu-mobile-btn');
+        var header = document.getElementById("header");
+        var headerHeight = header.clientHeight;
+
+        menuBtn.onclick = function (){
+            var isclose = header.clientHeight === headerHeight;
+            if(isclose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+
+        var buyBtn = document.querySelectorAll('.buy-ticket-btn');
+        var modal = document.getElementById("cover");
+        buyBtn.forEach(function(item){
+            item.onclick = function(e){
+                e.preventDefault();
+                modal.classList.add('active');
+            }
+        })
+
+        var closeModal = document.querySelectorAll('.close-modal');
+        closeModal.forEach(function(item){
+            item.onclick = function(){
+                modal.classList.remove('active');
+            }
+        })
+
+        window.onclick = function(event){
+            console.log(event.target)
+            if(event.target == modal){
+                modal.classList.remove('active');
+            }
+        }
+       //Mảng các thông tin hình ảnh của slider
+       var sliderInfo = [
+           {
+               name:'Chicago',
+               desc:'Thank you, Chicago - A night we won\'t forget.'
+           },
+           {
+               name:'Los Angeles',
+               desc:'We had the best time playing at Venice Beach!'
+           },
+           {
+               name:'New York',
+               desc:'The atmosphere in New York is lorem ipsum.'
+           }
+       ];
+       var sliderText = document.querySelector('.slider-title');
+       var sliderDesc = document.querySelector('.slider-desc');
+        // Các chức năng liên quan đến Slider 
+        // Lấy tất cả các ảnh trong phần slider
+        var images = document.querySelectorAll('#slider img');
+        var imageNumber = images.length;
+        //Lấy thuộc tính cha, thuộc tính chứa các ảnh
+        var imageContainer = document.querySelector('#slider .slider-container');
+        //Lấy tất cả các dấu chấm
+        var dots = document.querySelectorAll('.dot');
+        var count = 0;
+        //Cho tất cả nằm theo hàng ngang
+        //Ban đầu css các ảnh nằm đè lên nhau do thuoộc tính absolute, top = 0, left = 0;
+        //Cho tất cả các ảnh nẳm ngang nhau bằng điều chỉnh thuộc tính left của từn ảnh theo index của chúng
+        images.forEach(function(image,index){
+            image.style.left = index * 100+'%';
+
+            //Bấm vào các nút có thể chuyển ảnh
+            dots[index].addEventListener('click',function(){
+                slider(index)
+            });
+        });
+
+        
+        //Chuyển ảnh + tái sử dụng
+        function slider(index){
+            count = index;
+            imageContainer.style.right = index*100+'%';
+            sliderText.innerText = sliderInfo[index].name;
+            sliderDesc.innerText = sliderInfo[index].desc;
+            var dotActived = document.querySelector('.dot.active');
+            console.log(dotActived)
+            dotActived.classList.remove('active');
+            dots[index].classList.add('active');
+        }
+        //Tự động lướt ảnh qua phải theo chỉ số index
+        function autoSlider(){
+            if(count < imageNumber){
+                slider(count);
+                count++;
+            }
+            else{
+                count = 0;
+            }
+        }
+        //Tự dộng lướt ảnh mỗi 2s
+        setInterval(autoSlider,2000);
+    </script>
+</body>
+</html>
